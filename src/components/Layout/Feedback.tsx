@@ -67,7 +67,9 @@ function SendFeedback({onSubmit}: {onSubmit: () => void}) {
         {exit: isSubmitted}
       )}>
       <p className="w-full text-lg font-bold text-primary dark:text-primary-dark me-4">
-        {isSubmitted ? 'Thank you for your feedback!' : 'Is this page useful?'}
+        {isSubmitted
+          ? 'ご意見ありがとうございます！'
+          : 'このページは役に立ちましたか？'}
       </p>
       {!isSubmitted && (
         <button
